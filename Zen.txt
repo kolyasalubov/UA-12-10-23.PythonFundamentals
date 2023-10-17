@@ -1,2 +1,6 @@
 Zen of Python!!!
 1.Beautiful is better than ugly.
+
+
+
+5.Flat is better than nested.
