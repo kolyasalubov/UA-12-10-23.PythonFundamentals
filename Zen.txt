@@ -1,4 +1,5 @@
 Zen of Python!!!
 1.Beautiful is better than ugly.
 5.Flat is better than nested.
+7.Readability counts.
 18.If the implementation is easy to explain, it may be a good idea.
