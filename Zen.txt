@@ -3,3 +3,4 @@ Zen of Python!!!
 5.Flat is better than nested.
 7.Readability counts.
 18.If the implementation is easy to explain, it may be a good idea.
+30.Unless explicitly silenced
