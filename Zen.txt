@@ -1,5 +1,6 @@
 Zen of Python!!!
 1.Beautiful is better than ugly.
+4.Complex is better than complicated.
 5.Flat is better than nested.
 7.Readability counts.
 13.There should be one-- and preferably only one --obvious way to do it.
