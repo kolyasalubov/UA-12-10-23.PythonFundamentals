@@ -10,3 +10,5 @@ Zen of Python!!!
 18.If the implementation is easy to explain, it may be a good idea.
 26.Readability counts.
 30.Unless explicitly silenced
+28.Although practicality beats purity.
+
