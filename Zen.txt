@@ -21,7 +21,7 @@ Zen of Python!!!
 20.
 21.
 22.
-23.
+23.Complex is better than complicated.
 24.
 25.
 26.Readability counts.
