@@ -31,3 +31,4 @@ Zen of Python!!!
 30.Unless explicitly silenced
 31.
 36.If the implementation is hard to explain, it's a bad idea.
+49.In the face of ambiguity, refuse the temptation to guess.
