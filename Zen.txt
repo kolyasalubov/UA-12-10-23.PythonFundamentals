@@ -1,6 +1,6 @@
 Zen of Python!!!
 1.Beautiful is better than ugly.
-2.
+2.Explicit is better than implicit.
 3.
 4.Complex is better than complicated.
 5.Flat is better than nested.
