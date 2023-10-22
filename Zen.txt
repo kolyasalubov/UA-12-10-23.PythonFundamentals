@@ -31,3 +31,4 @@ Zen of Python!!!
 30.Unless explicitly silenced
 31.
 36.If the implementation is hard to explain, it's a bad idea.
+68.Complex is better than complicated.
