@@ -32,7 +32,5 @@ Zen of Python!!!
 31.In the face of ambiguity, refuse the temptation to guess.
 35.Although never is often better than *right* now.
 36.If the implementation is hard to explain, it's a bad idea.
-<<<<<<< HEAD
-=======
 58.Special cases aren't special enough to break the rules.
->>>>>>> e1663f29bb5b2d162f598a50d1623bfc1ff56cb4
+
