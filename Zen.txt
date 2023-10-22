@@ -30,4 +30,4 @@ Zen of Python!!!
 29.
 30.Unless explicitly silenced
 31.
-36.If the implementation is hard to explain, it's a bad idea.
+35.Although never is often better than *right* now.
