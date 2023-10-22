@@ -29,5 +29,5 @@ Zen of Python!!!
 28.Although practicality beats purity.
 29.
 30.Unless explicitly silenced
-31.
+31.In the face of ambiguity, refuse the temptation to guess.
 36.If the implementation is hard to explain, it's a bad idea.
