@@ -33,6 +33,7 @@ Zen of Python!!!
 31.In the face of ambiguity, refuse the temptation to guess.
 35.Although never is often better than *right* now.
 36.If the implementation is hard to explain, it's a bad idea.
+37.If the implementation is easy to explain, it may be a good idea.
 39.Explicit is better than implicit./check
 43.Sparse is better than dense.
 48.Unless explicitly silenced.
