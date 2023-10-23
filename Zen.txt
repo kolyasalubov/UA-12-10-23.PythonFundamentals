@@ -35,6 +35,7 @@ Zen of Python!!!
 36.If the implementation is hard to explain, it's a bad idea.
 39.Explicit is better than implicit./check
 43.Sparse is better than dense.
+48.Unless explicitly silenced.
 58.Special cases aren't special enough to break the rules.+
 59.Simple is better than complex.
 61.Flat is better than nested.
