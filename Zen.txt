@@ -23,7 +23,7 @@
 21.
 22.
 23.Complex is better than complicated.
-24.
+24.Flat is better than nested.
 25.Sparse is better than dense.
 26.Readability counts.
 27.Special cases aren't special enough to break the rules.+
