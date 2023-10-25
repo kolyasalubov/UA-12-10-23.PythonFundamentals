@@ -11,10 +11,11 @@ four = int(a[3])
 #I calculate the product of the four obtained numbers
 product = one*two*tree*four
 
-print(f'the product of the digits of {a}:',product)
+print(f'The product of the digits of {a}:',product)
 
 #write a number in revers order
 b = a[::-1]
-print(f'number {a} in revers order:', b)
+print(f'Number {a} in revers order:', b)
 
-#3
+#in ascending order sort the numbers included in the given number
+print(f'Number {a} in ascending order:', sorted(a))
