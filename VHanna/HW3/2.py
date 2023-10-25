@@ -13,6 +13,8 @@ product = one*two*tree*four
 
 print(f'the product of the digits of {a}:',product)
 
-#2
+#write a number in revers order
+b = a[::-1]
+print(f'number {a} in revers order:', b)
 
 #3
