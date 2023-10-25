@@ -37,7 +37,8 @@
 35.Although never is often better than *right* now.
 36.If the implementation is hard to explain, it's a bad idea.
 37.If the implementation is easy to explain, it may be a good idea.
-38.
+38.If the implementation is hard to explain, it's a bad
+idea.
 39.Explicit is better than implicit./check
 40.
 41.
