@@ -1,3 +1,4 @@
+# Print Fibnacci numbers
 num = int(input('Enter the number: '))
 fi = [0, 1]
 count = 2

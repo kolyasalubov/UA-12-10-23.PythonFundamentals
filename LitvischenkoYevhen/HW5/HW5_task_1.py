@@ -1,3 +1,4 @@
+#use loop
 num = [2, 5, 6, 8, 77, 6, 3, 5, 2]
 count = 0
 while count < len(num):
