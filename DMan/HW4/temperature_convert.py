@@ -1,9 +1,11 @@
-C = float(input("Enter temperature in Celsius to convert"))
+C = float(input("Enter temperature in degrees Celsius to convert "))
 Fahrenheit = 9 * C / 5 + 32
 
-message = "{}°C is equvalent to {}°F".format(C, Fahrenheit) 
+if C > -273.15: 
+    print("{}°C is equvalent to {}°F".format(C, Fahrenheit))
+elif C == 273.15:
+    print("The temperature is absolute zero")
+else: 
+    print("Error! Temperature below absolute zero (-273.15°C)")
 
-while Fahrenheit <= -273.15: 
-    print(message)
-
-    match 
+exit
