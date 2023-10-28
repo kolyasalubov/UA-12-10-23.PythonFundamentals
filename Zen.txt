@@ -32,13 +32,8 @@
 30.Unless explicitly silenced
 31.In the face of ambiguity, refuse the temptation to guess.
 32.There should be one-- and preferably only one --obvious way to do it.
-<<<<<<< HEAD
-33.
-34
-=======
 33.Although that way may not be obvious at first unless you're Dutch.
 34.
->>>>>>> 597e2b1334af43f9008a21351965af60744d64cc
 35.Although never is often better than *right* now.
 36.If the implementation is hard to explain, it's a bad idea.
 37.If the implementation is easy to explain, it may be a good idea.
@@ -46,20 +41,12 @@
 39.Explicit is better than implicit./check
 40.
 41.
-<<<<<<< HEAD
-42.
-=======
 42.Flat is better than nested.
->>>>>>> 597e2b1334af43f9008a21351965af60744d64cc
 43.Sparse is better than dense.
 44.Readability counts.
 45.New day - new chance
 46.
-<<<<<<< HEAD
-47.
-=======
 47.A casual stroll through the lunatic asylum shows that faith does not prove anything!
->>>>>>> 597e2b1334af43f9008a21351965af60744d64cc
 48.Unless explicitly silenced.
 49.
 50.
@@ -69,18 +56,8 @@
 54.If the implementation is hard to explain, it's a bad idea.
 55.
 56.
-<<<<<<< HEAD
-57.
-58.Special cases aren't special enough to break the rules.+
-59.Simple is better than complex.
-60.
-61.Flat is better than nested.
-
-
-=======
 57.Lorem ipsum dolor sit amet, consectetur adipiscing elit
 58.Special cases aren't special enough to break the rules.+
 59.Simple is better than complex.
 60.
 61.Flat is better than nested.
->>>>>>> 597e2b1334af43f9008a21351965af60744d64cc
