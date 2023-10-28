@@ -41,7 +41,7 @@
 idea.
 39.Explicit is better than implicit./check
 40.
-41.
+41.Complex is better than complicated.
 42.Flat is better than nested.
 43.Sparse is better than dense.
 44.Readability counts.
