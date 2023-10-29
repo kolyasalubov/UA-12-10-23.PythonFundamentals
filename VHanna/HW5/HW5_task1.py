@@ -13,3 +13,4 @@ else:
 
     f_part_number_list = " * ".join(f_part_number)
     print(f'The factorial of {number}: {number}! = {f_part_number_list} = {factorial}')
+    
