@@ -5,4 +5,5 @@ c = int(number[-2])
 d = int(number[-1])
 first = a * b * c * d
 second = number[::-1]
-print(first, second)
+third = int(''.join(sorted(str(number))))
+print(first, second, third)
