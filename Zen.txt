@@ -60,5 +60,5 @@ idea.
 57.Lorem ipsum dolor sit amet, consectetur adipiscing elit
 58.Special cases aren't special enough to break the rules.+
 59.Simple is better than complex.
-60.
+60.Complex is better than complicated.
 61.Flat is better than nested.
