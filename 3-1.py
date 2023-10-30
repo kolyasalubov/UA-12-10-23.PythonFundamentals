@@ -58,9 +58,9 @@ zen = str("""The Zen of Python, by Tim Peters\
 56.Namespaces are one honking great idea -- let's do more of those!""")
 print(zen)
 
-print(zen.find('better'))
-print(zen.find('never'))
-print(zen.find('is'))
+print(zen.count('better'))
+print(zen.count('never'))
+print(zen.count('is'))
 
 print(zen.upper())
 new_zen = zen.replace('i', '&')
