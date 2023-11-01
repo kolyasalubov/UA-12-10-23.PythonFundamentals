@@ -1,7 +1,9 @@
-print("1. Celcius\n2. Fahrenheit\n3. Kelvin")
-choice = int(input("Select measurement scale number "))
+# print("1. Celcius\n2. Fahrenheit\n3. Kelvin")
+# choice = int(input("Select measurement scale number "))
             #cycle   
 while True:
+     print("1. Celcius\n2. Fahrenheit\n3. Kelvin")
+     choice = int(input("Select measurement scale number "))
             #convert from celsius
      match choice:
          case 1:
