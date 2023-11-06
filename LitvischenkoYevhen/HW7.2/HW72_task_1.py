@@ -5,5 +5,5 @@ def greeting(name):
     else:
         print(f'Hello, {name.capitalize()}!')
 
-verifi_name = input("Enter your name :")
-greeting(verifi_name)
+input_name = input("Enter your name :")
+greeting(input_name)

@@ -1,8 +1,10 @@
  #Find The Distance Between Two Points
-def distans(a, b:->list):
+def distans(a: list, b: list) -> float:
     """
-    input -> list
-
+    Distance Between Two Points
+    a -> list[0, 1]
+    b -> list[0, 1]
+    return -> float
     """
     return ((b[0]-a[0])**2 + (b[1]-a[1])**2)**0.5
 
