@@ -16,3 +16,4 @@ print(text_with_i_replaced)
 print(f"Occurrences of 'BETTER': {count_better}")
 print(f"Occurrences of 'NEVER': {count_never}")
 print(f"Occurrences of 'IS': {count_is}")
+
