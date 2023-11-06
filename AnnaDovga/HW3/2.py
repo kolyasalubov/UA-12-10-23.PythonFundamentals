@@ -19,4 +19,3 @@ while len(four_digit) > 0:
     index_min = four_digit.find(min(four_digit))
     four_digit = four_digit[:index_min] + four_digit[index_min+1:]
 print(sorted_digit)
-
