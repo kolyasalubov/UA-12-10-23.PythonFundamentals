@@ -11,3 +11,4 @@ while i < border:
     text = text + ", " + str(res) + ", " + str(j)
     print(res, j, " ", f"({i}) - iteration")
 print("Fibonacci numbers:", text)
+
