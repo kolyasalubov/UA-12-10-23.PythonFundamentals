@@ -1,4 +1,5 @@
-zen_txt = """1.Beautiful is better than ugly.
+str_ = '''The Zen of Python, by Tim Peters
+1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
 4.Complex is better than complicated.
@@ -53,18 +54,19 @@ zen_txt = """1.Beautiful is better than ugly.
 53.Although never is often better than *right* now.
 54.If the implementation is hard to explain, it's a bad idea.
 55.If the implementation is easy to explain, it may be a good idea.
-56.Namespaces are one honking great idea -- let's do more of those!"""
-better = "better"
-never = "never"
-iss = "is"
+56.Namespaces are one honking great idea -- let's do more of those!'''
+better_in_str = str_.count('better')
+never_in_str = str_.count('never')
+is_in_str = str_.count('is')
 
-c_better = better.count(zen_txt)
-c_never = never.count(zen_txt)
-c_i_s = iss.count(zen_txt)
+print(f'''Numbers of
+      "better":{better_in_str},
+      "never": {never_in_str},
+      "is": {is_in_str}" in python philosophy
+       ========================================= ''')
+print("Text in upper case:")
+print(str_.upper())
+print('===========================')
+print('replaced i  by &: ')
 
-print(f"Count words {better} are {c_better}")
-print(f"Count words {never} are {c_never}")
-print(f"Count words {iss} are {c_i_s}")
-
-print(zen_txt.upper())
-print(zen_txt.replace('i','&'))
+print(str_.replace('i','&'))

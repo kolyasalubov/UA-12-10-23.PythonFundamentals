@@ -1,4 +1,5 @@
-zen_txt = """1.Beautiful is better than ugly.
+task_1 = """ The Zen of Python, by Tim Peters
+1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
 4.Complex is better than complicated.
@@ -53,18 +54,20 @@ zen_txt = """1.Beautiful is better than ugly.
 53.Although never is often better than *right* now.
 54.If the implementation is hard to explain, it's a bad idea.
 55.If the implementation is easy to explain, it may be a good idea.
-56.Namespaces are one honking great idea -- let's do more of those!"""
-better = "better"
-never = "never"
-iss = "is"
+56.Namespaces are one honking great idea -- let's do more of those! """
 
-c_better = better.count(zen_txt)
-c_never = never.count(zen_txt)
-c_i_s = iss.count(zen_txt)
+# number of occurrences of "better":
+print("number of occurrences of better:", task_1.count("better"))
 
-print(f"Count words {better} are {c_better}")
-print(f"Count words {never} are {c_never}")
-print(f"Count words {iss} are {c_i_s}")
+# number of occurrences of "never":
+print("number of occurrences of never:", task_1.count("never"))
 
-print(zen_txt.upper())
-print(zen_txt.replace('i','&'))
+# number of occurrences of "is":
+print("number of occurrences of is:", task_1.count("is"))
+
+# UPPER_TEXT
+print(task_1.upper())
+
+# replace "i" on "&"
+task_1 = task_1.replace("i","&")
+print(task_1)
