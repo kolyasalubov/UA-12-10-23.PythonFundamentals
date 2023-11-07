@@ -22,29 +22,33 @@ def filter_words_perversion(str):
     #convert string to list
     list_of_char = list(str)
     #Delite spaces
+    while list_of_char[0] == ' ' :
+        list_of_char.pop(0)
+        
+    while list_of_char[-1] == ' ' :
+        list_of_char.pop(-1)
     i = 0    
     while i < len(list_of_char) :
-        if i == 0 and list_of_char[i] == ' ' :
-            list_of_char.pop(0)
-        elif list_of_char[i] == ' ' and list_of_char[i-1] == ' ':
+        if list_of_char[i] == ' ' and list_of_char[i-1] == ' ':
             list_of_char.pop(i)
         else:
             i += 1    
-
+    
+            
     #Capitalized list
-    for i in list_of_char :
-        index_of_char = list_of_char.index(i)
-        if (index_of_char == 0):
-            if i in alphabet_lower:
-                list_of_char[0] = alphabet_upper[alphabet_lower.index(i)]
-        elif i in alphabet_upper:
-            list_of_char[index_of_char] = alphabet_lower[alphabet_upper.index(i)]
+    for i in range(len(list_of_char)) :
+        if i == 0:
+            if list_of_char[i] in alphabet_lower:
+                list_of_char[i] = alphabet_upper[alphabet_lower.index(list_of_char[i])]
+        elif list_of_char[i] in alphabet_upper:
+            list_of_char[i] = alphabet_lower[alphabet_upper.index(list_of_char[i])]
 
     #concatinate string from list
     result_str = ''
     for i in list_of_char :
         result_str += i
     return result_str
+
 
 
 st = input("Enter string :")
