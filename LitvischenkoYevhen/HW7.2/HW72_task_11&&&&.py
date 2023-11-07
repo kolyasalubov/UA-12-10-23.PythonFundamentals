@@ -1,5 +1,7 @@
 #Counting sheep...
 def sheep_count(arr):
+    if arr == None :
+        print('Empty')
     if arr :
         return arr.count(True)
 

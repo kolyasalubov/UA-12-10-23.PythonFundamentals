@@ -1,20 +1,27 @@
 # No yelling!
 def filter_words_normal(str):
+    """Capitalized string and remove unneedible space"""
     str = str.split()
     str = ' '.join(str)
     str = str.capitalize()
     return str 
 
 def filter_words_short(str):
+    """Capitalized string and remove unneedible space"""
     return ' '.join(str.split()).capitalize()
 
 # Not using any string function
 def filter_words_perversion(str):
+    """
+    Capitalized string and remove unneedible space 
+    withaut using string function
+    """
     alphabet_upper = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     #alphabet_lower = list(''.join(alphabet_upper).lower())
     alphabet_lower = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    #convert string to list
     list_of_char = list(str)
-    #Delite space
+    #Delite spaces
     i = 0    
     while i < len(list_of_char) :
         if i == 0 and list_of_char[i] == ' ' :
@@ -33,7 +40,7 @@ def filter_words_perversion(str):
         elif i in alphabet_upper:
             list_of_char[index_of_char] = alphabet_lower[alphabet_upper.index(i)]
 
-    #concatinate strinf from list
+    #concatinate string from list
     result_str = ''
     for i in list_of_char :
         result_str += i

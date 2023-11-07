@@ -1,6 +1,6 @@
 #Convert boolean values to strings 'Yes' or 'No'.
 def bool_convert(value: bool):
-    """Convert bool to string"""
+    """Convert bool to string answer"""
     if value :
         return "Yes"
     else:

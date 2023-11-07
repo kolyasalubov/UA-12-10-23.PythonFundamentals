@@ -1,5 +1,6 @@
 #Jenny's secret message
 def greeting(name):
+    """greeting user with exept"""
     if name.lower() == 'johnny' :
         print(f'I lOVE YOU JOHNNY!!!')
     else:

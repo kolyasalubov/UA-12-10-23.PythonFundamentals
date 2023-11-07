@@ -1,5 +1,6 @@
 #Are You Playing Banjo?
 def banjo_playing(name: str):
+    """banjo plays only whos naim start with 'R' or 'r'"""
     if name[0] == 'R' or name[0] == 'r' :
         print(f'{name} plays banjo')
     else:
