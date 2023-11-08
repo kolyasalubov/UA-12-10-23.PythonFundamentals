@@ -56,6 +56,7 @@ zen_txt = """1.Beautiful is better than ugly.
 56.Namespaces are one honking great idea -- let's do more of those!"""
 better = "better"
 never = "never"
+<<<<<<< HEAD
 i_s = "is"
 
 c_better = better.count(zen_txt)
@@ -68,3 +69,17 @@ print(f"Count words {i_s} are {c_i_s}")
 
 print(zen_txt.upper())
 print(zen_txt.replace('i','&'))
+=======
+iss = "is"
+
+c_better = better.count(zen_txt)
+c_never = never.count(zen_txt)
+c_i_s = iss.count(zen_txt)
+
+print(f"Count words {better} are {c_better}")
+print(f"Count words {never} are {c_never}")
+print(f"Count words {iss} are {c_i_s}")
+
+print(zen_txt.upper())
+print(zen_txt.replace('i','&'))
+>>>>>>> 0e6f14cbb0ebd399b239dcb9512e1a8a16fb19cf

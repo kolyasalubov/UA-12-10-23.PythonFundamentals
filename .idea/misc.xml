@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Black">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="sdkName" value="Python 3.11" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11" project-jdk-type="Python SDK" />
@@ -10,4 +11,9 @@
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
 >>>>>>> b185b9cc8a9280cc9a6b4722071835774b226543
+=======
+    <option name="sdkName" value="Python 3.9" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+>>>>>>> 0e6f14cbb0ebd399b239dcb9512e1a8a16fb19cf
 </project>
