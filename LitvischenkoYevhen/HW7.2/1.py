@@ -1,3 +1,6 @@
+###################################
+#Jenny's secret message
+
 def greet(name):
     """
     Jenny has written a function that returns a greeting for a user.
@@ -8,14 +11,17 @@ def greet(name):
         return "Hello, my love!"
     return "Hello, {name}!".format(name=name)
 
-def distance(x1, y1, x2, y2):
-    """
-    Given two ordered pairs calculate the distance between them. Round to two decimal places.
-    This should be easy to do in 0(1) timing.
-    """
-    return round(((x2-x1)**2 + (y2-y1)**2)**0.5, 2)
+#####################################
+#Find The Distance Between Two Points
 
-def distans(a: list, b: list) -> float:
+#def distance(x1, y1, x2, y2):
+#    """
+#    Given two ordered pairs calculate the distance between them. Round to two decimal places.
+#    This should be easy to do in 0(1) timing.
+#    """
+#    return round(((x2-x1)**2 + (y2-y1)**2)**0.5, 2)
+
+def distance(a: list, b: list) -> float:
     """
     Distance Between Two Points
     a -> list[0, 1]
@@ -24,6 +30,8 @@ def distans(a: list, b: list) -> float:
     """
     return round(((b[0]-a[0])**2 + (b[1]-a[1])**2)**0.5, 2)
 
+#########################################
+#No yelling!
 
 #def filter_words(str):
 #    """Capitalized string and remove unneedible space"""
@@ -64,6 +72,9 @@ def filter_words(str):
         result_str += i
     return result_str
 
+########################################
+#Convert a Number to a String
+
 def number_to_string(num):
     """
     We need a function that can transform a number (integer) into a string.
@@ -74,6 +85,9 @@ def number_to_string(num):
 #    st_3 = '{}'.format(num)
     return st_1
 
+#############################################
+#Reversing Words in a String
+
 def reverse(st):
     """
     You need to write a function that reverses the words in a given string.
@@ -82,9 +96,15 @@ def reverse(st):
     """
     return ' '.join(reversed(st.split()))
 
+################################################
+#Reverse List Order
+
 def reverce_list(l: list):
     """In this kata you will create a function that takes in a list and returns a list with the reverse order."""
     return l[::-1]
+
+##############################################
+# Multiples of 3 or 5
 
 def solution(number):
     """
@@ -97,6 +117,9 @@ def solution(number):
         return 0
     return sum([x for x in range(1, number) if (x%3 == 0) or (x%5 == 0)])
   
+################################################
+#Will you make it?
+
 def zero_fuel(distance_to_pump, mpg, fuel_left):
     """
     You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
@@ -107,6 +130,9 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
         return True
     else:
         return False
+
+##################################################
+#  Are You Playing Banjo?
     
 def are_you_playing_banjo(name):
     """
@@ -120,9 +146,15 @@ def are_you_playing_banjo(name):
         name += ' does not play banjo'
     return name
 
+##################################################
+#Convert boolean values to strings 'Yes' or 'No’
+
 def bool_to_word(boolean):
     """Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false."""
     return "Yes" if boolean else "No"
+
+###################################################
+#Counting sheep
 
 def count_sheeps(sheep):
     """
@@ -130,4 +162,20 @@ def count_sheeps(sheep):
     We need a function that counts the number of sheep present in the array (true means present).
     """
     return sheep.count(True)
+
+###################################################
+# Is this my tail?
+
+def correct_tail(body, tail):
+    """
+    Some new animals have arrived at the zoo. 
+    The zoo keeper is concerned that perhaps the animals do not have the right tails.
+    To help her, you must correct the broken function to make sure that the second argument (tail), 
+    is the same as the last letter of the first argument (body) - otherwise the tail wouldn't fit!
+    
+    If the tail is right return true, else return false.
+
+    The arguments will always be non empty strings, and normal letters.
+    """
+    return True if body[-1] == tail else False
 
