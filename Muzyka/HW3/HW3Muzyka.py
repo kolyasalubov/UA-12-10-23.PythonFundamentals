@@ -1,4 +1,5 @@
-zen_txt = """1.Beautiful is better than ugly.
+text = """
+1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
 4.Complex is better than complicated.
@@ -53,18 +54,48 @@ zen_txt = """1.Beautiful is better than ugly.
 53.Although never is often better than *right* now.
 54.If the implementation is hard to explain, it's a bad idea.
 55.If the implementation is easy to explain, it may be a good idea.
-56.Namespaces are one honking great idea -- let's do more of those!"""
-better = "better"
-never = "never"
-iss = "is"
+56.Namespaces are one honking great idea -- let's do more of those!
+"""
 
-c_better = better.count(zen_txt)
-c_never = never.count(zen_txt)
-c_i_s = iss.count(zen_txt)
+splitted_text = text.split()
+number_of_better = splitted_text.count('better')
+number_of_never = splitted_text.count('never')
+number_of_is = splitted_text.count('is')
 
-print(f"Count words {better} are {c_better}")
-print(f"Count words {never} are {c_never}")
-print(f"Count words {iss} are {c_i_s}")
+print("the text contains the number of words 'better':", number_of_better)
+print("the text contains the number of words 'never':", number_of_never)
+print("the text contains the number of words 'is':", number_of_is)
 
-print(zen_txt.upper())
-print(zen_txt.replace('i','&'))
+uppercase_text = text.upper()
+print("___________________________________")
+print("there are our text in uppercase:", uppercase_text)
+
+modified_text = text.replace('i', '&')
+print("___________________________________")
+print("there are our modified text:", modified_text)
+print("___________________________________")
+
+number = 4916
+digits = [int(digit) for digit in str(number)]
+product = 1
+
+for digit in digits:
+    product *= digit
+
+print("the product of the digits of number:", product)
+print("___________________________________")
+
+reversed_number = int(str(number)[::-1])
+print("Reversed number:", reversed_number)
+print("___________________________________")
+
+sorted_number = int(''.join(sorted(str(number))))
+print("Number with sorted digits:", sorted_number)
+
+a = 100
+b = "not number"
+
+a, b = b, a
+
+print("a =", a)
+print("b =", b)

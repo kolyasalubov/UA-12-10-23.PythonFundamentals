@@ -1,4 +1,6 @@
-zen_txt = """1.Beautiful is better than ugly.
+#####################################
+
+str_37 = """1.Beautiful is better than ugly.
 2.Explicit is better than implicit.
 3.Simple is better than complex.
 4.Complex is better than complicated.
@@ -54,17 +56,28 @@ zen_txt = """1.Beautiful is better than ugly.
 54.If the implementation is hard to explain, it's a bad idea.
 55.If the implementation is easy to explain, it may be a good idea.
 56.Namespaces are one honking great idea -- let's do more of those!"""
-better = "better"
-never = "never"
-iss = "is"
 
-c_better = better.count(zen_txt)
-c_never = never.count(zen_txt)
-c_i_s = iss.count(zen_txt)
+#####################################
 
-print(f"Count words {better} are {c_better}")
-print(f"Count words {never} are {c_never}")
-print(f"Count words {iss} are {c_i_s}")
+if str_37.count('better') >= 0:
+    print(str_37.count('better'))
+else:
+    print('"better" is not exist in this string')
 
-print(zen_txt.upper())
-print(zen_txt.replace('i','&'))
+if str_37.count('never') >= 0:
+    print(str_37.count('never'))
+else:
+    print('"never" is not exist in this string')
+
+if str_37.count('is') >= 0:
+    print(str_37.count('is'))
+else:
+    print('"is" is not exist in this string')
+
+#####################################
+
+print(str_37.upper())
+
+#####################################
+
+print(str_37.replace('i','&'))
