@@ -7,3 +7,7 @@ def sum_of_char(text):
     
     char_dict = {char : text.count(char) for char in text}
     return char_dict
+
+
+
+    
