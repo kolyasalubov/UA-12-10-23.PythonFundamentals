@@ -1,17 +1,17 @@
 def validity_of_password():
     import re
-    p= input("Input your password  ")
+    password = input("Input your password ")
 
     while True:  
-        if (len(p)<6 or len(p)>12):
+        if (len(password) < 6 or len(password) > 12):
             return "Invalid Password"
-        elif not re.search("[a-z]",p):
+        elif not re.search("[A-Z]", password):
             return "Invalid Password"
-        elif not re.search("[0-9]",p):
+        elif not re.search("[a-z]", password):
             return "Invalid Password"
-        elif not re.search("[A-Z]",p):
+        elif not re.search('\d', password):
             return "Invalid Password"
-        elif not re.search("[$#@]",p):
+        elif not re.search("[$#@]", password):
             return "Invalid Password"
         else:
             return "Valid Password"
