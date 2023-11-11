@@ -1,6 +1,5 @@
-import re
-
 def validity_of_password():
+    import re
     p= input("Input your password  ")
 
     while True:  
@@ -16,3 +15,5 @@ def validity_of_password():
             return "Invalid Password"
         else:
             return "Valid Password"
+        
+print(validity_of_password())
