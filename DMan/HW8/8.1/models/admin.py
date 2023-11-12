@@ -1,1 +1,2 @@
-pass
+def create_admin():
+    pass
