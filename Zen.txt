@@ -19,7 +19,7 @@ Zen of Python!!!
 18.If the implementation is easy to explain, it may be a good idea.
 19.
 20.
-21.
+21.Explicit is better than implicit.
 22.
 23.Complex is better than complicated.
 24.
