@@ -1,17 +1,21 @@
 from pyowm import OWM
 
 
-API_KEY = 'ef2206ff5da67de63306d0b143e20872'
+API_KEY = 'c681c28434f69b999b35eefa39c20239'
 # ---------- FREE API KEY examples ---------------------
 
 
 
-def get_weather():
+def get_weather(city):
 # Search for current weather in London (Great Britain) and get details
     owm = OWM(API_KEY)
     mgr = owm.weather_manager()
-    observation = mgr.weather_at_place('London,GB')
+    observation = mgr.weather_at_place(city)
     w = observation.weather
+    return w
+
+if __name__ == '__main__' :
+    w = get_weather('Київ')
     print(w.detailed_status)         # 'clouds'
     print(w.wind())                  # {'speed': 4.6, 'deg': 330}
     print(w.humidity)                # 87
@@ -19,9 +23,3 @@ def get_weather():
     print(w.rain)                    # {}
     print(w.heat_index)              # None
     print(w.clouds)                  # 75
-
-get_weather()
-
-
-
-
