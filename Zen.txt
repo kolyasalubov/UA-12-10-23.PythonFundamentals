@@ -50,7 +50,7 @@ idea.
 52.
 53.
 54.If the implementation is hard to explain, it's a bad idea.
-55.
+55.If the implementation is easy to explain, it may be a good idea.
 56.
 57.Lorem ipsum dolor sit amet, consectetur adipiscing elit
 58.Special cases aren't special enough to break the rules.+
