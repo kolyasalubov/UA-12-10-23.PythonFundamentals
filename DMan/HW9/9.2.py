@@ -1,11 +1,9 @@
 import pygame
 
-# визначаємо константу затримки кадрів
-# та інші константи
 FPS = 60
 
-WIDTH_DISPLAY=600
-HEIGHT_DISPLAY=400
+WIDTH_DISPLAY = 500
+HEIGHT_DISPLAY = 500
 
 WHITE_COLOR = (255, 255, 255)	
 ORANGE_COLOR = (255, 150, 100)
@@ -20,7 +18,7 @@ pygame.init()
 pygame.display.set_mode((600, 400))
 
 # убрав повноекранний режим:
-gameDisplay = pygame.display.set_mode((WIDTH_DISPLAY, HEIGHT_DISPLAY), pygame.RESIZABLE) 
+gameDisplay = pygame.display.set_mode((WIDTH_DISPLAY, HEIGHT_DISPLAY))#, pygame.RESIZABLE) 
 
 pygame.display.set_caption("My first game")
 
