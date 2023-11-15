@@ -30,4 +30,4 @@ while attempts > 0:
     else:
         print("You entered wrong number, silly\n")
 else:
-    print("Haha! You lost! my dogs will have a feast...")    
+    print("Haha! You lost! my dogs will have a feast...")
