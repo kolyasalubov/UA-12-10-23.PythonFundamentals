@@ -4,6 +4,5 @@ while True :
       print(f"Hello, {login}!")
       break
    else:
-      print("Eror: Incorrect login \nTry again")
-     
-      
+      print("Incorrect login. Please try again.")
+      continue
