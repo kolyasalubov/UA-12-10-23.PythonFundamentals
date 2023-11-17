@@ -1,6 +1,5 @@
 #1
 def greet(name):
-
     """greeting Johnny with love, and simply the rest """
     
     if name == "Johnny":
@@ -23,7 +22,6 @@ def distance(x1, y1, x2, y2):
 
 #3
 def filter_words(st):
-
     """filters string capital letter and properly spaces"""
     
     new_st = ' '.join(st.split())
@@ -87,7 +85,6 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 def are_you_playing_banjo(name):
 
     """answers the question "Are you playing banjo?" by your name"""
-
     if name[0] == "r":
         return name +" plays banjo"
     elif name[0] == "R":
@@ -122,7 +119,6 @@ def count_sheeps(sheep):
 
 #12
 def correct_tail(body, tail):
-
     """
     confirmation that the second argument, is the same 
     as the last letter of the first argument
