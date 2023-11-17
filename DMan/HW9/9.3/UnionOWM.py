@@ -4,10 +4,6 @@ from pyowm import OWM
 from config import *
 from langid import classify
 
-# run = True
-    
-# while run:
-
 
 owm = OWM(key)
 mgr = owm.weather_manager()
@@ -17,6 +13,12 @@ root.geometry('800x600')
 root.title("Weather Application")
 
 def get_weather():
+
+    """"
+    The weather in the selected city is calculated and 
+    displayed in Ukrainian and English languages
+    """
+
     city = entry_field.get()
     observation = mgr.weather_at_place(city)
     w = observation.weather
@@ -35,7 +37,6 @@ def get_weather():
         weather_info = ("Invalid input/Неправільне введення")
     label['text'] = weather_info
 
-# canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
 
 
 frame = tk.Frame(root, bg = "deep sky blue", bd = 5)
