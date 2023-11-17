@@ -1,6 +1,5 @@
 #1
 def greet(name):
-
     """greeting Johnny with love, and simply the rest """
     
     if name == "Johnny":
@@ -11,7 +10,11 @@ def greet(name):
 
 #2    
 def distance(x1, y1, x2, y2):
+<<<<<<< HEAD
     
+=======
+     
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     """
     calculates the distance between two ordered pairs 
     and round it to two decimal places
@@ -23,7 +26,11 @@ def distance(x1, y1, x2, y2):
 
 #3
 def filter_words(st):
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     """filters string capital letter and properly spaces"""
     
     new_st = ' '.join(st.split())
@@ -41,24 +48,42 @@ def numbers_to_text(num):
 
 #5
 def reverseWords(text):
+<<<<<<< HEAD
 
     """reverses the words in a given string"""
 
+=======
+    
+    """reverses the words in a given string"""
+   
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     return ' '.join(reversed(text.split()))
 
 
 #6
 def reverse_list(l):
+<<<<<<< HEAD
 
     """reverses list"""
 
     return l[::-1]
+=======
+    
+     """reverses list"""
+    
+     return l[::-1]
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     # return list(reversed(l))
 
 
 #7
+<<<<<<< HEAD
 def solution(number):    
 
+=======
+def solution(number):
+    
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     """the sum of all the multiples of 3 or 5 below the number passed in"""
 
     if number > 0:
@@ -74,9 +99,15 @@ def solution(number):
 
 #8
 def zero_fuel(distance_to_pump, mpg, fuel_left):
+<<<<<<< HEAD
 
     """The ability to get a pump, according to the entered data"""
 
+=======
+    
+    """The ability to get a pump, according to the entered data"""
+    
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     if distance_to_pump - mpg * fuel_left <= 0:
         return True
     else:
@@ -87,7 +118,11 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 def are_you_playing_banjo(name):
 
     """answers the question "Are you playing banjo?" by your name"""
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     if name[0] == "r":
         return name +" plays banjo"
     elif name[0] == "R":
@@ -98,6 +133,7 @@ def are_you_playing_banjo(name):
 
 #10
 def bool_to_word(boolean):
+<<<<<<< HEAD
 
     """convert boolean values to strings 'Yes' or 'No'."""
 
@@ -105,14 +141,31 @@ def bool_to_word(boolean):
         return "Yes"
     else:
         return "No" 
+=======
+    
+    """convert boolean values to strings 'Yes' or 'No'."""
+    
+    return "Yes" if boolean else "No"
+    # if boolean == True:
+    #     return "Yes"
+    # else:
+    #     return "No" 
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
 
 
 #11
 def count_sheeps(sheep):
+<<<<<<< HEAD
 
     """counts the number of sheep present in the array"""
 
     # return sum(sheep) - not understood why programm marked this wrong
+=======
+    
+    """counts the number of sheep present in the array"""
+    
+    # return sum(sheep) - not understood why programm marked it wrong
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     total = 0
     for i in sheep:
         if i == True:
@@ -122,13 +175,25 @@ def count_sheeps(sheep):
 
 #12
 def correct_tail(body, tail):
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
     """
     confirmation that the second argument, is the same 
     as the last letter of the first argument
     """
+<<<<<<< HEAD
 
     if body[-1] == tail:
         return True
     else:
         return False
+=======
+    
+    if body[-1] == tail:
+        return True
+    else:
+        return False
+>>>>>>> 65f4348db14c3fa0243299a577cff3e7728bc950
