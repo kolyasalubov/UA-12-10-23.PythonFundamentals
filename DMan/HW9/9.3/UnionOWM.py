@@ -24,15 +24,21 @@ def get_weather():
     w = observation.weather
     detect_language = classify(city)
     if detect_language[0] == 'uk':
-        weather_info = (f"Хманість y місті {city}\n {w.detailed_status}\n"
-                        f"Температура дорівнює {round(w.temperature('celsius')['temp'], 2)}°C"
-                        f"\nШвидкicть вітру станове {w.wind()['speed']} км/год\n"
-                        f"Вологість повітрю станове {w.humidity}")
+        weather_info = (f"Хманість y місті {city}\n 
+                       {w.detailed_status}\n"
+                       f"Температура дорівнює 
+                       {round(w.temperature('celsius')['temp'], 2)}°C"
+                       f"\nШвидкicть вітру станове {w.wind()['speed']}"
+                        "км/год\n"
+                       f"Вологість повітрю станове {w.humidity}")
     elif detect_language[0] == 'en':
-        weather_info = (f"Conditions of {city} city\n: {w.detailed_status}\n"
-                    f"Temperature is {round(w.temperature('celsius')['temp'], 2)}"
-                    "°C" f"\nWind speed is {w.wind()['speed']} km/hour\nHumidity "
-                    f"of the air is {w.humidity}")
+        weather_info = (f"Conditions of {city} city\n: 
+                       {w.detailed_status}\n"
+                       f"Temperature is {round(w.temperature('celsius')
+                                                ['temp'], 2)}"
+                       "°C" f"\nWind speed is {w.wind()['speed']} 
+                       km/hour\nHumidity "
+                       f"of the air is {w.humidity}")
     else:
         weather_info = ("Invalid input/Неправільне введення")
     label['text'] = weather_info
@@ -40,10 +46,12 @@ def get_weather():
 
 
 frame = tk.Frame(root, bg = "deep sky blue", bd = 5)
-frame.place(relx = 0.5, rely = 0.1, relwidth = 0.75, relheight = 0.1, anchor = 'n')
+frame.place(relx = 0.5, rely = 0.1, relwidth = 0.75,
+             relheight = 0.1, anchor = 'n')
 
 lower_frame = tk.Frame(root, bg = 'gold', bd = 10)
-lower_frame.place(relx = 0.5, rely = 0.25, relwidth = 0.75, relheight = 0.6, anchor = 'n')
+lower_frame.place(relx = 0.5, rely = 0.25, relwidth = 0.75,
+                  relheight = 0.6, anchor = 'n')
 
 label = tk.Label(lower_frame, font = ('Courier', 12))
 label.place(relx = 0, rely = 0, relwidth =1 , relheight = 1)
