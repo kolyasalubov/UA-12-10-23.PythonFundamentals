@@ -4,10 +4,6 @@ from pyowm import OWM
 from config import *
 from langid import classify
 
-# run = True
-    
-# while run:
-
 
 owm = OWM(key)
 mgr = owm.weather_manager()
