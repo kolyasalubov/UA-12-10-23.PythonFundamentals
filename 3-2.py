@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 number = int(input("Enter 4 digit natural number: "))
 
 product = 1
@@ -11,7 +10,7 @@ sorted_digit = '' .join(sorted(str(number)))
 
 print(f"product:{product}")
 print(f"reverse:{reversed_number}")
-=======
+
 number = int(input("Enter 4 digit natural number: "))
 
 product = 1
