@@ -4,7 +4,7 @@ import random
 messages = ["Nice day to learn a something new!",
             "Blablabla", 
             "Two Jews once meet and...",
-            "Hey, Boss! Where is my salary?"]
+            "Hey, Boss! Where is my salary increase?"]
 random_message = print(random.choice(messages))
 
 
@@ -15,7 +15,7 @@ class Human:
         self.name = name  
 
     def greeting(self):
-        return print(f"Hello, {self.name}! Welcome!")
+        return print(f"Hello, {self.name}!")
 
     @classmethod
     def get_species(cls):
@@ -27,7 +27,6 @@ class Human:
     
 
 person1 = Human("Liubov Koliasa")
-person2 = Human("Dmytro")
 
 h = Human
 person1.greeting()
