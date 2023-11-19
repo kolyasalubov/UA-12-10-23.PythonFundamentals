@@ -13,8 +13,8 @@
 .idea/**/shelf
 
 #DMan113/HW
-.DMan/HW9/9.3/config.py
-.DMan/for_something.py
+DMan/HW9/9.3/config.py
+DMan/for_something.py
 
 # AWS User-specific
 .idea/**/aws.xml
