@@ -1,5 +1,6 @@
 #1
 def greet(name):
+
     """greeting Johnny with love, and simply the rest """
     
     if name == "Johnny":
@@ -10,7 +11,7 @@ def greet(name):
 
 #2    
 def distance(x1, y1, x2, y2):
-    
+
     """
     calculates the distance between two ordered pairs 
     and round it to two decimal places
@@ -22,6 +23,7 @@ def distance(x1, y1, x2, y2):
 
 #3
 def filter_words(st):
+
     """filters string capital letter and properly spaces"""
     
     new_st = ' '.join(st.split())
@@ -47,7 +49,6 @@ def reverseWords(text):
 
 #6
 def reverse_list(l):
-
     """reverses list"""
 
     return l[::-1]
@@ -55,6 +56,7 @@ def reverse_list(l):
 
 
 #7
+
 def solution(number):    
 
     """the sum of all the multiples of 3 or 5 below the number passed in"""
@@ -85,6 +87,7 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 def are_you_playing_banjo(name):
 
     """answers the question "Are you playing banjo?" by your name"""
+
     if name[0] == "r":
         return name +" plays banjo"
     elif name[0] == "R":
@@ -103,13 +106,15 @@ def bool_to_word(boolean):
     else:
         return "No" 
 
-
 #11
 def count_sheeps(sheep):
 
     """counts the number of sheep present in the array"""
 
     # return sum(sheep) - not understood why programm marked this wrong
+
+
+
     total = 0
     for i in sheep:
         if i == True:
@@ -128,3 +133,4 @@ def correct_tail(body, tail):
         return True
     else:
         return False
+
