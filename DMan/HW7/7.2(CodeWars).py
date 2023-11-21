@@ -43,6 +43,7 @@ def numbers_to_text(num):
 def reverseWords(text):
 
     """reverses the words in a given string"""
+
     return ' '.join(reversed(text.split()))
 
 
@@ -51,8 +52,6 @@ def reverse_list(l):
     """reverses list"""
 
     return l[::-1]
-
-     
     # return list(reversed(l))
 
 
@@ -77,7 +76,7 @@ def solution(number):
 def zero_fuel(distance_to_pump, mpg, fuel_left):
 
     """The ability to get a pump, according to the entered data"""
-    
+
     if distance_to_pump - mpg * fuel_left <= 0:
         return True
     else:
@@ -99,21 +98,22 @@ def are_you_playing_banjo(name):
 
 #10
 def bool_to_word(boolean):
-    
+
     """convert boolean values to strings 'Yes' or 'No'."""
-    
-    return "Yes" if boolean else "No"
-    # if boolean == True:
-    #     return "Yes"
-    # else:
-    #     return "No" 
+
+    if boolean == True:
+        return "Yes"
+    else:
+        return "No" 
 
 #11
 def count_sheeps(sheep):
-   
+
     """counts the number of sheep present in the array"""
-    
-    # return sum(sheep) - not understood why programm marked it wrong
+
+    # return sum(sheep) - not understood why programm marked this wrong
+
+
 
     total = 0
     for i in sheep:
@@ -128,6 +128,7 @@ def correct_tail(body, tail):
     confirmation that the second argument, is the same 
     as the last letter of the first argument
     """
+
     if body[-1] == tail:
         return True
     else:
