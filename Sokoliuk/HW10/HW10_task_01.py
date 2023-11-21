@@ -47,7 +47,7 @@ class Triangle(Polygon):
 
 while True:
     print("1 - rectangle\n2 - triangle\n0 - exit\n")
-    value = input("Choose figure: ")
+    value = input("Choose command: ")
     match value:
         case "1":
             rectan = Rectangle()
