@@ -1,0 +1,21 @@
+import random
+
+right_number = random.randint(1,100)
+
+print('Game rules: You must guess the number from 1 to 100. You have 10 attempts.')
+
+user_number = int(input('Enter a number:'))
+
+for attempts in range(9):
+    if user_number > right_number: 
+        print('Your number is too big.')
+        user_number = (int(input(f'Your {attempts+2} attempt. Guess the number: '))) 
+    elif user_number < right_number: 
+        print('Your number is too small')
+        user_number = (int(input(f'Your {attempts+2} attempt. Guess the number: '))) 
+    else: 
+        print('Congratulations, you have guessed the right number.') 
+        break
+    attempts += 1
+    
+if user_number != right_number: print('Sorry, you have exhausted all 10 attempts.')
