@@ -30,3 +30,4 @@ def get_figure_area():
 
 if __name__ == "__main__":
     get_figure_area()
+    
