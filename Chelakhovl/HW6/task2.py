@@ -1,4 +1,3 @@
-login = ""
 while True :
    login = input("Enter your username: ")
    if login == "First":
@@ -6,5 +5,5 @@ while True :
       break
    else:
       print("Eror: Incorrect login \nTry again")
-      continue
+     
       
