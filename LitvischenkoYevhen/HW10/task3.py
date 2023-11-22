@@ -22,7 +22,7 @@ class Employee:
 
 
 employee1 = Employee("John Doe", 50000)
-employee2 = Employee("Jane Doe", 60000)
+employee2 = Employee("Joe Maier", 60000)
 
 # Display inforo for each employee
 employee1.display_info()
