@@ -103,7 +103,9 @@ class Sphere:
     def get_surface_area(self):
         return round((4 * pi * self.radius ** 2), 5) 
 
+
     def get_density(self):
+
         return round((self.weight / self.get_volume), 5) 
 
 
@@ -126,7 +128,14 @@ class Sphere:
 #  in example cases, but let's stick with that, that Timmy yet has
 #  to learn them.
 
+
+def class_name_changer(cls, new_name) :
+    if not new_name[0].isupper() or not new_name.isalnum():
+        raise NameError('Invalid class name!')
+    cls.__name__ = new_name
+
 def class_name_changer(cls, new_name):
     if new_name[0] == str.upper() and new_name.isalnum():
         cls.__name__ = new_name
         return cls.__name__
+
