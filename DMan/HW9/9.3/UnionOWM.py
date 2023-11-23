@@ -23,6 +23,7 @@ def get_weather():
     observation = mgr.weather_at_place(city)
     w = observation.weather
     detect_language = classify(city)
+
     if detect_language[0] == 'uk':
         weather_info = (f"Хманість y місті {city}\n 
                        {w.detailed_status}\n"
@@ -41,6 +42,7 @@ def get_weather():
                        f"of the air is {w.humidity}")
     else:
         weather_info = ("Invalid input/Неправільне введення")
+        
     label['text'] = weather_info
 
 
