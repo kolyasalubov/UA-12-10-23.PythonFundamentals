@@ -1,7 +1,7 @@
-class CustomError(Exception):
+# class CustomError(Exception):
     
-    def __str__(self):
-        return repr(self)
+#     def __str__(self):
+#         return repr(self)
 
 
 def get_day_week(input_data):
@@ -20,10 +20,12 @@ while True:
     try:
         input_data = int(input("Enter the number of the day week: "))
         if input_data < 1 or input_data > 7:
-            raise CustomError
+            # raise CustomError
+            raise Exception
     except ValueError:
         print("Enter only digits!\n")
-    except CustomError:
+    # except CustomError:
+    except Exception:
         print("Use only numbers from 1 to 7")
     else:
         print(get_day_week(input_data))
