@@ -85,6 +85,7 @@ def zero_fuel(distance_to_pump, mpg, fuel_left):
 def are_you_playing_banjo(name):
 
     """answers the question "Are you playing banjo?" by your name"""
+    
     if name[0] == "r":
         return name +" plays banjo"
     elif name[0] == "R":
