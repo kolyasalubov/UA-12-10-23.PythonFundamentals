@@ -1,8 +1,8 @@
-class CustomError(Exception):
-    def __init__(self, data):
-        self.data = data
-    def __str__(self):
-        return repr(self.data)
+# class CustomError(Exception):
+#     def __init__(self, data):
+#         self.data = data
+#     def __str__(self):
+#         return repr(self.data)
 
 def age_info(age):
     if age % 2 == 0:
@@ -17,7 +17,8 @@ while True:
     try:
         age = int(input("Enter your age: "))
         if age < 0:
-            raise CustomError("Your age can't be less than 0")
+            # raise CustomError("Your age can't be less than 0")
+            raise Exception("Your age can't be less than 0")
     except ValueError:
         print("Only digits allowed")
     else:
