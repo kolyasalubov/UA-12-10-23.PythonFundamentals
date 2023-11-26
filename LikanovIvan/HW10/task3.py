@@ -19,5 +19,11 @@ emp1.info()
 emp2.info()
 emp3.info()
 Employee.total_employees()
+
+print(Employee.__bases__)
+print(Employee.__dict__)
+print(Employee.__name__)
+print(Employee.__module__)
+print(Employee.__doc__)
             
     
