@@ -2,6 +2,9 @@ from tkinter import *
 import tkinter.messagebox
 import sqlite3
 from datetime import datetime
+import os
+
+self_directory = os.path.dirname(os.path.abspath(__file__))
 
 def calculate_rent_cost(pick_up_date, drop_off_date):
     cost_of_day = 42
@@ -40,7 +43,7 @@ def save(event):
 
             rent_cost = calculate_rent_cost(pick_up_date, drop_off_date)
 
-            conn = sqlite3.connect('rentcar.db')
+            conn = sqlite3.connect(f'{self_directory}/rentcar.db')
             with conn:
                 cursor = conn.cursor()
                 cursor.execute('INSERT INTO rentcar (city, address, name, phone_number, PickupDate, PickupTime, DropoffDate, DropoffTime, purpose, rent_cost, car) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
@@ -98,7 +101,7 @@ root = Tk()
 root.title("Car Hire – Search, Compare & Save")
 root.geometry('1100x600')
 
-img  = PhotoImage(file="header-img.png")
+img  = PhotoImage(file=f"{self_directory}/img/header-img.png")
 ima = Label(root,image=img) 
 ima.place(x=0,y=0, relwidth=1, relheight=1) 
 ima.image = img
