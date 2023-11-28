@@ -9,8 +9,11 @@ self_directory = os.path.dirname(os.path.abspath(__file__))
 
 
 def calculate_rent_cost(pick_up_date, drop_off_date):
-    cost_of_day = 42
+    cost_of_day = 40
     cost_for_month = 400
+
+    if pick_up_date > drop_off_date:
+        drop_off_date = drop_off_date.replace(year=drop_off_date.year + 1)
 
     days_difference = (drop_off_date - pick_up_date).days
     full_months = (drop_off_date.year - pick_up_date.year) * 12 + (
