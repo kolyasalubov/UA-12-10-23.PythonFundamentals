@@ -1,5 +1,6 @@
 from tkinter import *
-from tkinter import messagebox
+from tkinter.messagebox import *
+import tkinter.messagebox
 import sqlite3
 from datetime import datetime
 import os
