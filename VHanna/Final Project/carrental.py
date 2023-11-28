@@ -1,5 +1,5 @@
 from tkinter import *
-import tkinter.messagebox
+from tkinter import messagebox
 import sqlite3
 from datetime import datetime
 import os
@@ -122,21 +122,21 @@ def find(event):
         with connn:
             readdb(q, connn)
 
-    lab = Label(root2, text="Enter client's number:", font="Verdana 13")
+    lab = Label(root2, text="Enter client's number:", font=("Verdana", 13))
     lab.place(x=10, y=10)
 
     ent = Entry(root2, width=25, bd=3)
     ent.place(x=210, y=15)
 
     close = Button(
-        root2, text=" Close ", font="Verdana 20", bg="yellow", command=root2.destroy
+        root2, text=" Close ", font=("Verdana", 20), bg="yellow", command=root2.destroy
     )
     close.place(x=270, y=130)
 
     find_button = Button(
         root2,
         text="Find",
-        font="Verdana 20",
+        font=("Verdana", 20),
         bg="dodgerblue",
         command=on_find_button_click,
     )
@@ -156,35 +156,35 @@ ima.place(x=250, y=0, relwidth=1)
 ima.image = img
 
 Startlabel = Label(
-    root, text="Welcome to the Car Renting system!", font="Verdana 17 bold"
+    root, text="Welcome to the Car Renting system!", font=("Verdana", 17)
 )
 Startlabel.place(x=500, y=0)
 
-lab = Label(root, text="City", font="Verdana 13")
+lab = Label(root, text="City", font=("Verdana", 13))
 lab.place(x=10, y=0)
 ent1_city = Entry(root, width=30, bd=3)
 ent1_city.insert(0, "Lviv")
 ent1_city.place(x=150, y=5)
 
-lab = Label(root, text="Address", font="Verdana 13")
+lab = Label(root, text="Address", font=("Verdana", 13))
 lab.place(x=10, y=40)
 ent2_adress = Entry(root, width=30, bd=3)
 ent2_adress.place(x=150, y=45)
 
-lab = Label(root, text="Full name", font="Verdana 13")
+lab = Label(root, text="Full name", font=("Verdana", 13))
 lab.place(x=10, y=80)
 ent3_name = Entry(root, width=30, bd=3)
 ent3_name.place(x=150, y=85)
 
-lab = Label(root, text="Phone number", font="Verdana 13")
+lab = Label(root, text="Phone number", font=("Verdana", 13))
 lab.place(x=10, y=120)
 ent4_phone = Entry(root, width=30, bd=3)
 ent4_phone.place(x=150, y=125)
 
-lab = Label(root, text="<<More details>>", font="Verdana 14")
+lab = Label(root, text="<<More details>>", font=("Verdana", 14))
 lab.place(x=150, y=160)
 
-lab = Label(root, text="Pick-up Date:", font="Verdana 13")
+lab = Label(root, text="Pick-up Date:", font=("Verdana", 13))
 lab.place(x=10, y=190)
 mainframe = Frame(root)
 mainframe.place(x=10, y=220)
@@ -206,7 +206,7 @@ choices = list(calendar.month_name)[1:]
 option2 = OptionMenu(mainframe, var2_pickupm, *choices)
 option2.grid(row=1, column=1)
 
-lab = Label(root, text="Drop-off Date:", font="Verdana 13")
+lab = Label(root, text="Drop-off Date:", font=("Verdana", 13))
 lab.place(x=310, y=190)
 mainframe = Frame(root)
 mainframe.place(x=310, y=220)
@@ -224,7 +224,7 @@ choices = list(calendar.month_name)[1:]
 option4 = OptionMenu(mainframe, var4_dropofm, *choices)
 option4.grid(row=1, column=1)
 
-lab = Label(root, text="Time:", font="Verdana 13")
+lab = Label(root, text="Time:", font=("Verdana", 13))
 lab.place(x=10, y=260)
 mainframe = Frame(root)
 mainframe.place(x=10, y=290)
@@ -241,7 +241,7 @@ choices = ["00", "15", "30", "45"]
 option6 = OptionMenu(mainframe, var6_upminute, *choices)
 option6.grid(row=1, column=1)
 
-lab = Label(root, text="Time:", font="Verdana 13")
+lab = Label(root, text="Time:", font=("Verdana", 13))
 lab.place(x=310, y=260)
 mainframe = Frame(root)
 mainframe.place(x=310, y=290)
@@ -280,32 +280,34 @@ var9_car.set(choices[0])
 option4 = OptionMenu(mainframe, var9_car, *choices)
 option4.grid(row=1, column=1)
 
-lab = Label(root, text="Purpose of rental", font="Verdana 13")
+lab = Label(root, text="Purpose of rental", font=("Verdana", 13))
 lab.place(x=10, y=350)
 rad0 = StringVar()
 rad0.set("Leisure")
 Radiobutton(
-    root, text="Business", font="Verdana 9", variable=rad0, value="Business"
+    root, text="Business", font=("Verdana", 9), variable=rad0, value="Business"
 ).place(x=210, y=354)
 Radiobutton(
-    root, text="Leisure", font="Verdana 9", variable=rad0, value="Leisure"
+    root, text="Leisure", font=("Verdana", 9), variable=rad0, value="Leisure"
 ).place(x=290, y=354)
 
-lab = Label(root, text="No credit card fees", font="Verdana 10 italic")
+lab = Label(root, text="No credit card fees", font=("Verdana", 10))
 lab.place(x=10, y=405)
-lab = Label(root, text="No amendment fees", font="Verdana 10 italic")
+lab = Label(root, text="No amendment fees", font=("Verdana", 10))
 lab.place(x=10, y=425)
-lab = Label(root, text="24/7 phone support", font="Verdana 10 italic")
+lab = Label(root, text="24/7 phone support", font=("Verdana", 10))
 lab.place(x=10, y=445)
-lab = Label(root, text="Longer you take, less you pay", font="Verdana 10 italic")
+lab = Label(root, text="Longer you take, less you pay", font=("Verdana", 10))
 lab.place(x=10, y=465)
 
-close = Button(root, text="Close", font="Verdana 20", bg="yellow", command=root.destroy)
+close = Button(
+    root, text="Close", font=("Verdana", 20), bg="yellow", command=root.destroy
+)
 close.place(x=680, y=440)
-newbutton1 = Button(root, text="Register", font="Verdana 20", bg="green")
+newbutton1 = Button(root, text="Register", font=("Verdana", 20), bg="green")
 newbutton1.place(x=410, y=440)
 newbutton1.bind("<Button-1>", save)
-fin = Button(root, text="Find", font="Verdana 20", bg="dodgerblue")
+fin = Button(root, text="Find", font=("Verdana", 20), bg="dodgerblue")
 fin.place(x=570, y=440)
 fin.bind("<Button-1>", find)
 
