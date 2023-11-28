@@ -3,13 +3,14 @@ import tkinter.messagebox
 import sqlite3
 from datetime import datetime
 import os
+import calendar
 
 self_directory = os.path.dirname(os.path.abspath(__file__))
 
 
 def calculate_rent_cost(pick_up_date, drop_off_date):
     cost_of_day = 42
-    cost_for_month = 45
+    cost_for_month = 400
 
     days_difference = (drop_off_date - pick_up_date).days
     full_months = (drop_off_date.year - pick_up_date.year) * 12 + (
@@ -158,6 +159,7 @@ Startlabel.place(x=500, y=0)
 lab = Label(root, text="City", font="Arial 15")
 lab.place(x=10, y=0)
 ent1_city = Entry(root, width=30, bd=3)
+ent1_city.insert(0, "Lviv")
 ent1_city.place(x=150, y=5)
 
 lab = Label(root, text="Address", font="Arial 15")
@@ -183,29 +185,20 @@ lab.place(x=10, y=190)
 mainframe = Frame(root)
 mainframe.place(x=10, y=220)
 var1_pickupd = StringVar(root)
-var1_pickupd.set("Day")
+var1_pickupd.set("1")
 choices = [str(i) for i in range(1, 32)]
 option1 = OptionMenu(mainframe, var1_pickupd, *choices)
 option1.grid(row=1, column=1)
 
+current_date = datetime.now()
+first_day_of_next_month = current_date.replace(day=1, month=current_date.month + 1)
+next_month_name = calendar.month_name[first_day_of_next_month.month]
+
 mainframe = Frame(root)
 mainframe.place(x=75, y=220)
 var2_pickupm = StringVar(root)
-var2_pickupm.set("Month")
-choices = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-]
+var2_pickupm.set(next_month_name)
+choices = list(calendar.month_name)[1:]
 option2 = OptionMenu(mainframe, var2_pickupm, *choices)
 option2.grid(row=1, column=1)
 
@@ -214,7 +207,7 @@ lab.place(x=310, y=190)
 mainframe = Frame(root)
 mainframe.place(x=310, y=220)
 var3_dropofd = StringVar(root)
-var3_dropofd.set("Day")
+var3_dropofd.set("15")
 choices = [str(i) for i in range(1, 32)]
 option3 = OptionMenu(mainframe, var3_dropofd, *choices)
 option3.grid(row=1, column=1)
@@ -222,21 +215,8 @@ option3.grid(row=1, column=1)
 mainframe = Frame(root)
 mainframe.place(x=375, y=220)
 var4_dropofm = StringVar(root)
-var4_dropofm.set("Month")
-choices = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-]
+var4_dropofm.set(next_month_name)
+choices = list(calendar.month_name)[1:]
 option4 = OptionMenu(mainframe, var4_dropofm, *choices)
 option4.grid(row=1, column=1)
 
@@ -245,14 +225,14 @@ lab.place(x=10, y=260)
 mainframe = Frame(root)
 mainframe.place(x=10, y=290)
 var5_uphour = StringVar(root)
-var5_uphour.set("Hour")
+var5_uphour.set("10")
 choices = [str(i) for i in range(7, 24)]
 option5 = OptionMenu(mainframe, var5_uphour, *choices)
 option5.grid(row=1, column=1)
 mainframe = Frame(root)
 mainframe.place(x=80, y=290)
 var6_upminute = StringVar(root)
-var6_upminute.set("Minute")
+var6_upminute.set("00")
 choices = ["00", "15", "30", "45"]
 option6 = OptionMenu(mainframe, var6_upminute, *choices)
 option6.grid(row=1, column=1)
@@ -262,14 +242,14 @@ lab.place(x=310, y=260)
 mainframe = Frame(root)
 mainframe.place(x=310, y=290)
 var7_offhour = StringVar(root)
-var7_offhour.set("Hour")
+var7_offhour.set("10")
 choices = [str(i) for i in range(7, 24)]
 option7 = OptionMenu(mainframe, var7_offhour, *choices)
 option7.grid(row=1, column=1)
 mainframe = Frame(root)
 mainframe.place(x=380, y=290)
 var8_offminute = StringVar(root)
-var8_offminute.set("Minute")
+var8_offminute.set("00")
 choices = ["00", "15", "30", "45"]
 option8 = OptionMenu(mainframe, var8_offminute, *choices)
 option8.grid(row=1, column=1)
@@ -277,29 +257,29 @@ option8.grid(row=1, column=1)
 mainframe = Frame(root)
 mainframe.place(x=380, y=350)
 var9_car = StringVar(root)
-var9_car.set("Car")
 choices = [
-    "Kia Sedona (Mini Van)",
-    "Ford F150 (Pickup)",
+    "Chevrolet Cruze",
     "Chevy Silverado (Pickup)",
-    "Toyota RAV4 (SUV)",
+    "Ford F150 (Pickup)",
     "Ford Focus",
     "Hyundai Accent",
-    "Hyundai Santa Fe (SUV)",
-    "Nissan Versa",
-    "Toyota Yaris",
-    "Mitsubishi Mirage",
-    "Volkswagen Jetta",
-    "Chevrolet Cruze",
     "Hyundai Elantra",
+    "Hyundai Santa Fe (SUV)",
+    "Kia Sedona (Mini Van)",
+    "Mitsubishi Mirage",
+    "Nissan Versa",
+    "Toyota RAV4 (SUV)",
+    "Toyota Yaris",
+    "Volkswagen Jetta",
 ]
+var9_car.set(choices[0])
 option4 = OptionMenu(mainframe, var9_car, *choices)
 option4.grid(row=1, column=1)
 
 lab = Label(root, text="Purpose of rental", font="Arial 14")
 lab.place(x=10, y=350)
 rad0 = StringVar()
-rad0.set(1)
+rad0.set("Leisure")
 Radiobutton(
     root, text="Business", font="Arial 9", variable=rad0, value="Business"
 ).place(x=210, y=354)
