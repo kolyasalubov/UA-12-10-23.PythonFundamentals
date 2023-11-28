@@ -26,8 +26,11 @@ def valid_password(password):
     return False
 
 
+
 user_password = input("Enter your password: ")
 if valid_password(user_password):
     print("Password is valid.")
 else:
     print("Password is not valid.")
+
+
