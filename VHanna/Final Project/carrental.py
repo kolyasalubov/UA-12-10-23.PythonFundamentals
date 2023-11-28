@@ -129,7 +129,7 @@ def find(event):
     ent.place(x=210, y=15)
 
     close = Button(
-        root2, text=" Close ", font="Arial 20", bg="firebrick2", command=root2.destroy
+        root2, text=" Close ", font="Arial 20", bg="yellow", command=root2.destroy
     )
     close.place(x=270, y=130)
 
@@ -147,15 +147,16 @@ def find(event):
 
 root = Tk()
 root.title("Car Hire – Search, Compare & Save")
-root.geometry("1100x600")
+root.geometry("1100x550")
 
-img = PhotoImage(file=f"{self_directory}/img/header-img.png")
-ima = Label(root, image=img)
-ima.place(x=0, y=0, relwidth=1, relheight=1)
+img = PhotoImage(file=f"{self_directory}/img/bmw.png")
+resized_img = img.subsample(2, 2)
+ima = Label(root, image=resized_img)
+ima.place(x=250, y=0, relwidth=1)
 ima.image = img
 
 Startlabel = Label(
-    root, text="Welcome to the Car Renting system!", font="Fixedsys 17 italic"
+    root, text="Welcome to the Car Renting system!", font="Fixedsys 17 bold"
 )
 Startlabel.place(x=500, y=0)
 
@@ -299,11 +300,9 @@ lab.place(x=10, y=445)
 lab = Label(root, text="Longer you take, less you pay", font="Arial 10 italic")
 lab.place(x=10, y=465)
 
-close = Button(
-    root, text=" Close ", font="Arial 20", bg="firebrick2", command=root.destroy
-)
+close = Button(root, text=" Close ", font="Arial 20", bg="yellow", command=root.destroy)
 close.place(x=630, y=440)
-newbutton1 = Button(root, text="Register", font="Arial 20", bg="white")
+newbutton1 = Button(root, text="Register", font="Arial 20", bg="green")
 newbutton1.place(x=421, y=440)
 newbutton1.bind("<Button-1>", save)
 fin = Button(root, text="Find", font="Arial 20", bg="dodgerblue")
