@@ -118,7 +118,7 @@ def find(event):
 
     def on_find_button_click():
         q = ent.get()
-        connn = sqlite3.connect("rentcar.db")
+        connn = sqlite3.connect(f"{self_directory}/rentcar.db")
         with connn:
             readdb(q, connn)
 
