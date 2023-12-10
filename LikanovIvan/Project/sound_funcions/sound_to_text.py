@@ -4,7 +4,7 @@ import queue
 import json
 
 def sound_to_text(device=1, samplerate=48000):
-    model_path = r"C:\Users\ivan0\OneDrive\Desktop\Sublime.projects\final course project\vosk-model-en-us-0.22-lgraph"
+    model_path = r"" #here you need to add path to speech recognition model
     model = vosk.Model(model_path)
     q = queue.Queue()
 
