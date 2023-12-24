@@ -10,3 +10,5 @@ def amount_of_num(string):
 
 s = input("Enter a text: ")
 print(amount_of_num(s))
+
+    
