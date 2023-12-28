@@ -1,6 +1,5 @@
 number = int(input("Enter a four-digit natural number: "))
 
-# Check if the number is a four-digit natural number
 if 1000 <= number <= 9999:
     digit_1 = number // 1000
     digit_2 = (number // 100) % 10
@@ -18,3 +17,4 @@ if 1000 <= number <= 9999:
     print(f"Number with digits in ascending order: {sorted_number}")
 else:
     print("Please enter a valid four-digit natural number.")
+    
