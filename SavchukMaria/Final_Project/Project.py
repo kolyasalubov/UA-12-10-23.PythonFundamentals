@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+"""Копія записника "Doctor Segmentation.ipynb"
 """ 
 "Doctor Segmentation.ipynb"
 
@@ -62,7 +64,10 @@ sns.histplot(data['Prescription'])
 plt.title("Distribution of Prescription")
 plt.xlabel("Range of Prescription")
 plt.ylabel("Count")
-pi
+
+
+
+
 plt.show()
 
 sns.pairplot(data)
